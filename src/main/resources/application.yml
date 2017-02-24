@@ -1,7 +1,25 @@
 spring:
   application:
-    name: sample-admin-app 
-
+    name: springboot-admin-app 
+  boot:
+   admin:
+    routes:
+     endpoints: 
+         - env
+         - metrics
+         - trace
+         - dump
+         - jolokia
+         - info
+         - configprops
+         - trace
+         - logfile
+         - refresh
+         - flyway
+         - liquibase
+         - heapdump
+         - hystrix.stream
+         - turbine.stream
    
 server:
  port: 9995
@@ -12,4 +30,6 @@ server:
    client:
     serviceUrl:
      defaultZone: http://localhost:8761/eureka/
+ 
+ 
  
