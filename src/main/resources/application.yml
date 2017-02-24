@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: sample-admin-app 
+
+   
+server:
+ port: 9995
+ 
+ #Configure Admin App to interact with Eureka Server
+ eureka:
+  instance:
+   client:
+    serviceUrl:
+     defaultZone: http://localhost:8761/eureka/
+ 
